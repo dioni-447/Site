@@ -15,7 +15,8 @@ header {
     background-color: #2d5a1b; /*cabeçalho do site*/
     padding: 15px;      
     display: flex; 
-    text-align: center;        
+    text-align: center;
+    justify-content: center;
     align-items: center;  
     gap: 20px; 
 }
