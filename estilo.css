@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*reset dos estilos */
+
+body {
+    font-family: Arial, sans-serif;  /*alterando a font do body para arial*/
+    background-color: #1a1a1a;  /*as cores, foram pensadas nas principais do Minecraft*/
+    color: #ffffff;
+}
+
+header {
+    background-color: #2d5a1b; /*cabeçalho do site*/
+    padding: 20px;      
+    display: flex; 
+    text-align: center;
+    align-items: center;       
+    justify-content: center;
+    position: relative;  
+
+}
+
+header img {
+    position: absolute;
+    left: 10px;
+    width:150px; 
+    top:50%; 
+    transform: translateY(-50%);
+}
+
+header div {
+    text-align: center; /* centraliza o texto */
+}
+
+
+nav {
+    background-color: #3a3a3a;  /*essa é a area de navegação, vai ser usada para conectar à outras paginas do site*/
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;    /* remove as bolinhas */
+    display: flex;       /* coloca os itens lado a lado */
+    justify-content: center;  /* centraliza o menu */
+    gap: 20px;           /* espaço entre os itens */
+
+}
+
+nav a {   /*estilizar os links*/
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover { /*quando o mouse estiver em cima, mudar de cor*/
+    color: #5dbb3f;
+}
+
+main { /*area principal do site*/
+    padding: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+footer {  /*a area de baixo do site*/
+    background-color: #2d5a1b;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
