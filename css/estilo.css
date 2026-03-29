@@ -13,12 +13,27 @@ body {
 
 header {
     background-color: #2d5a1b; /*cabeçalho do site*/
-    padding: 15px;      
+    padding: 20px;      
     display: flex; 
-    text-align: center;        
-    align-items: center;  
-    gap: 20px; 
+    text-align: center;
+    align-items: center;       
+    justify-content: center;
+    position: relative;  
+
 }
+
+header img {
+    position: absolute;
+    left: 10px;
+    width:150px; 
+    top:50%; 
+    transform: translateY(-50%);
+}
+
+header div {
+    text-align: center; /* centraliza o texto */
+}
+
 
 nav {
     background-color: #3a3a3a;  /*essa é a area de navegação, vai ser usada para conectar à outras paginas do site*/
