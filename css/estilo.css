@@ -159,21 +159,22 @@ footer {  /*a area de baixo do site*/
 
 
 /* Telas menores que 768px (tablets e celulares) */
+
+/*adição de suporte mobile, tambem feito com IA*/
 @media (max-width: 768px) {
+
     header {
         flex-direction: column;
-        text-align: center;
         gap: 10px;
     }
 
     header img {
-        position: static;      /* remove o absolute */
-        transform: none;       /* remove o translateY */
+        position: static;
+        transform: none;
         width: 120px;
     }
-}
 
-.imagem {
+    .imagem {
         flex-direction: column;
         align-items: center;
         padding: 20px;
@@ -194,7 +195,7 @@ footer {  /*a area de baixo do site*/
         max-width: 300px;
     }
 
-     .hide {
+    .hide {
         flex-direction: column;
         align-items: center;
     }
@@ -204,8 +205,19 @@ footer {  /*a area de baixo do site*/
         max-width: 280px;
     }
 
-     nav ul {
+    nav ul {
         flex-direction: column;
         align-items: center;
         gap: 8px;
     }
+
+    img {
+        width: 100%;
+    }
+
+    h1 { font-size: 1.4rem; }
+    h2 { font-size: 1.1rem; }
+
+    main { padding: 15px; }
+
+} /* ← essa chave fecha o @media inteiro */
