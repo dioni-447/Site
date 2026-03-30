@@ -27,15 +27,128 @@
       <li><a href="sobre.html">Sobre</a></li>
       <li><a href="contato.html">Contato</a></li>
     </ul>
-  </nav>
+  </nav><br><br>
 
   <main>
       <h1 id="inicio">Início</h1>
-  </main>
+      <br><hr><br>
+      <h3>Bem-vindo ao mundo do Minecraft!</h3><br>
+      <p>Aqui você vai encontrar tudo sobre o jogo que conquistou milhões de jogadores no mundo inteiro.</p>
+      <br>
+      <div class="imagem">
+        <img src="imagens/teste.png" alt="teste" title="teste">
+        <img src="imagens/minecraft.jpg" alt="minecraft" title="minecraft">
+        <img src="imagens/fofo.webp" alt="fofo" title="fofo">
+      </div>
+      <br><br><hr><br>
 
+     <h2>Contexto geral</h2>
+     <section class="conteudo">
+        <div>
+          <p>Lançado em sua versão inicial em 2009 por<b>Markus "Notch" Persson </b>e oficialmente em 2011, Minecraft revolucionou os games com seu mundo sandbox feito de blocos. Sem objetivos lineares, o jogo cativou o público ao oferecer liberdade total para explorar, sobreviver e construir. O sucesso estrondoso levou a Microsoft a comprar a desenvolvedora Mojang em 2014 por<b> US$ 2,5 bilhões</b>. Desde então, o título continuou evoluindo com atualizações constantes que expandiram seus biomas, criaturas e mecânicas. Hoje, a obra transcende o entretenimento: é usada como ferramenta educacional, consolidou-se como o jogo <b>mais vendido de todos os tempos</b> e mantém uma comunidade global gigantesca, provando que sua fórmula criativa é atemporal.</p><br><br>
+      </div>
+      <figure>
+        <img src="imagens/notch.jpg" alt="Notch">
+        <figcaption>
+            Foto de Notch, criador de Minecraft.
+        </figcaption>
+      </figure>
+      </section><br><hr><br><br>
+
+
+      <section>
+        <h2>Conteúdo do site</h2>
+
+
+
+    <div class="container">
+      <div>
+        <div class="botao">Biomas</div>
+        <div class="hide">
+            <picture>
+              <img src="imagens/floresta.png" alt="bioma de carvalho">
+              <figcaption>Bioma de floresta</figcaption>            
+            </picture>
+              <picture>
+              <img src="imagens/cherry.png" alt="bioma de cerejeira">
+              <figcaption>Bioma de cerejeiras</figcaption>       
+            </picture>
+              <picture>
+              <img src="imagens/montanha.jpg" alt="bioma de Montanhas">
+              <figcaption>Bioma de Montanhas</figcaption>   
+            </picture><!--Primeiro bloco de conteudo-->    
+          </div>
+        </div>
+
+      <div>
+        <div class="botao">Blocos</div>
+        <div class="hide">
+          <picture>
+              <img src="imagens/madeira.jpg" alt="Blocos de madeira">
+              <figcaption>Blocos de madeira</figcaption>            
+            </picture>
+              <picture>
+              <img src="imagens/pedra.jpg" alt="Blocos de pedra">
+              <figcaption>Blocos de madeira</figcaption>       
+            </picture>
+              <picture>
+              <img src="imagens/escadas.jpg" alt="escadas">
+              <figcaption>Algumas escadas, usadas para decoração</figcaption>   
+            </picture>
+        </div>
+    </div>
+
+      <div>
+        <div class="botao">Mobs</div>
+        <div class="hide">
+          <picture>
+              <img src="imagens/zumbi.jpg" alt="zumbi">
+              <figcaption>Zumbi</figcaption>            
+            </picture>
+              <picture>
+              <img src="imagens/animais.jpg" alt="animais">
+              <figcaption>Alguns animais presentes no jogo</figcaption>       
+            </picture>
+              <picture>
+              <img src="imagens/dragao.jpg" alt="ender dragon">
+              <figcaption>O dragão Ender, chefe final do jogo</figcaption>   
+            </picture>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+      </section>
+
+    </main>
+
+ 
   <footer>
     <p><strong>Aluno:</strong> João Vitor Santos Goulart</p>
     <p><strong>RA:</strong> 5172445</p>
   </footer>
 </body>
 </html> 
+
+<script>
+  const botoes = document.querySelectorAll(".botao");
+
+botoes.forEach(botao => {
+    botao.addEventListener("click", () => {
+        const conteudo = botao.nextElementSibling;
+
+        // Verifica se está escondido ou não
+        // Se estiver "none" ou vazio, mudamos para "flex"
+        if (conteudo.style.display === "flex") {
+            conteudo.style.display = "none";
+            conteudo.style.maxHeight = null;
+        } else {
+            conteudo.style.display = "flex"; // Aqui a mágica acontece
+            conteudo.style.maxHeight = conteudo.scrollHeight + "px";
+        }
+    });
+});
+</script>

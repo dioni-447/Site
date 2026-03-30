@@ -22,26 +22,27 @@ header {
 
 }
 
-header img {
+header img {     /*IMAGENS DENTRO DO HEADER*/
     position: absolute;
     left: 10px;
     width:150px; 
     top:50%; 
     transform: translateY(-50%);
+    border-radius: 10px;
 }
 
-header div {
+header div {    /* DIVs DENTRO DO HEADER*/
     text-align: center; /* centraliza o texto */
 }
 
 
-nav {
+nav {     /*ELEMENTO HTML PARA AREA DE NAVEGAÇÃO*/
     background-color: #3a3a3a;  /*essa é a area de navegação, vai ser usada para conectar à outras paginas do site*/
     padding: 10px;
     text-align: center;
 }
 
-nav ul {
+nav ul {    /*LISTA DENTRO DE NAVEGAÇÃO*/
     list-style: none;    /* remove as bolinhas */
     display: flex;       /* coloca os itens lado a lado */
     justify-content: center;  /* centraliza o menu */
@@ -63,7 +64,89 @@ main { /*area principal do site*/
     padding: 30px;
     max-width: 1000px;
     margin: 0 auto;
+    background-color: #2d5a1b;
+    border:1px solid #ffffff;
+    border-radius:10px;
 }
+
+section {   /*ELEMENTO HTML PARA SEÇÕES*/
+    margin: 20px 0;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #6B3F1F;
+}
+
+.imagem{   /*CLASSE PARA AS IMAGENS FICAREM LADO A LADO*/
+    background-image: url("../imagens/terra.jpg");
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+.imagem img{ /* AS IMAGENS DENTRO DA CLASSE IMAGEM*/
+    width: 250px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    object-fit: cover;  /* <- imagem continuar proporcional*/
+}
+
+.conteudo {   /*FEITO PARA DEIXAR O TEXTO E A IMAGEM LADO A LADO*/
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+ .conteudo img {   /*IMAGENS DENTRO DA CLASSE CONTEUDO*/
+    width: 300px;
+    border: 2px solid #ffffff;
+    border-radius:10px;
+
+}
+
+.container{    /*PARA DEIXAR AS DIVs UMA EM CIMA DA OUTRA*/
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+.botao{    /* UMA DIV PARA AGIR Q NEM UM BOTÃO*/
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #8B5E3C;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius:5px;
+}
+.botao:hover{   /*QUANDO O MOUSE TIVER EM CIMA*/
+    background-color: #713600;
+}
+ 
+.hide{   /*DEPOIS DE PRESSIONADO, APARECER ISSO*/
+    padding: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    border-top: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    justify-content: space-between;
+
+    display: none;
+}
+
+.hide img{ /*IMAGENS DENTRO DO CONTEUDO ESCONDIDO*/
+    width: 250px;
+    border: 2px solid #ffffff;
+    border-radius:10px;
+    object-fit: cover;
+}
+
+.galeria.ativo {
+    display: flex; /* Muda para flex ao ser ativado */
+  }
 
 footer {  /*a area de baixo do site*/
     background-color: #2d5a1b;
@@ -72,3 +155,57 @@ footer {  /*a area de baixo do site*/
     padding: 15px;
     margin-top: 40px;
 }
+
+
+
+/* Telas menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    header img {
+        position: static;      /* remove o absolute */
+        transform: none;       /* remove o translateY */
+        width: 120px;
+    }
+}
+
+.imagem {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .imagem img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conteudo img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+     .hide {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hide img {
+        width: 100%;
+        max-width: 280px;
+    }
+
+     nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
