@@ -10,6 +10,9 @@ body {
     background-color: #1a1a1a;  /*as cores, foram pensadas nas principais do Minecraft*/
     color: #ffffff;
 }
+a{
+    text-decoration: none;
+}
 
 header {
     background-color: #2d5a1b; /*cabeçalho do site*/
