@@ -148,6 +148,127 @@ section {   /*ELEMENTO HTML PARA SEÇÕES*/
     display: flex; /* Muda para flex ao ser ativado */
   }
 
+.contato{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 10px;
+    row-gap: 1em;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+}
+.contato div{
+    border:2px solid #5dbb3f;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: small;
+    text-decoration: none;
+    color: #ffffff;
+}
+.contato a img{
+    width: 20%;
+    border-radius: 10px;
+}
+.contato a:hover{
+    background-color: rgba(93,187,63,0.08);;
+    border-radius: 10px;
+}
+.form{
+    grid-column: 1 / 4;
+    display:flex;
+    flex-direction: column;
+    gap:10%;
+    background-color: #2d5a1b;
+}
+
+.linhadotempo{
+    position:relative;
+}
+.linhadotempo::before{
+    content: '';       
+    position: absolute;
+    left: 10px;         
+    top: 0;
+    bottom: 0;         
+    width: 2px;       
+    background: #5dbb3f;
+}
+
+.lt-item{
+    position:relative;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+.lt-ponto {
+    position: absolute;
+    left: 5px;          
+    top: 10px;
+    width: 12px;
+    height: 12px;
+    background: #5dbb3f;
+    border-radius: 2px;  
+}
+.lt-card1 {
+    background: #2d5a1b;
+    width:70%;
+    display:flex;
+    gap:20px;
+    border: 2px solid #5dbb3f;
+    border-radius: 8px;
+    padding: 12px;
+}
+.lt-card2 {
+    background: #6B3F1F;
+    width:70%;
+    display:flex;
+    gap:20px;
+    border: 2px solid #8B5E3C;
+    border-radius: 8px;
+    padding: 12px;
+}
+.lt-card1 img, .lt-card2 img{
+    border-radius: 10px;
+    width:10%;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+.lt-texto {
+    display: flex;
+    flex-direction: column; /* empilha h2, h3 e p verticalmente */
+}
+
+.form textarea{
+    width: 100%;
+    padding:10px;
+    background-color: #1a1a1a;
+    border: 1px solid #5dbb3f;
+    border-radius: 5px;
+}
+#linha {
+    display: flex;
+    gap: 10px;
+    border:none;
+}
+
+#linha input {
+    flex: 1; /* cada um ocupa metade */
+    padding: 10px;
+    background-color: #1a1a1a;
+    border: 1px solid #5dbb3f;
+    border-radius: 5px;
+}
+.form button {
+    align-self: center;
+    padding: 6px 20px;
+    background-color: #5dbb3f;
+    border: 1px solid #5dbb3f;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
 footer {  /*a area de baixo do site*/
     background-color: #2d5a1b;
     color: #ffffff;
@@ -160,7 +281,7 @@ footer {  /*a area de baixo do site*/
 
 /* Telas menores que 768px (tablets e celulares) */
 
-/*adição de suporte mobile, tambem feito com IA*/
+/*adição de suporte mobile, tambem feito com IA, por curiosidade*/
 @media (max-width: 768px) {
 
     header {
@@ -220,4 +341,4 @@ footer {  /*a area de baixo do site*/
 
     main { padding: 15px; }
 
-} /* ← essa chave fecha o @media inteiro */
+} 

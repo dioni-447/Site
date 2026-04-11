@@ -55,8 +55,9 @@
       </figure>
       </section><br><hr><br><br>
 
-  <h2>Conteúdo do site</h2>
-  <section>
+<h2>Conteúdo do site</h2>
+      <section>
+      
     <div class="container">
       <div>
         <div class="botao">Biomas</div>
@@ -85,7 +86,7 @@
             </picture>
               <picture>
               <img src="imagens/pedra.jpg" alt="Blocos de pedra">
-              <figcaption>Blocos de madeira</figcaption>       
+              <figcaption>Blocos de pedra</figcaption>       
             </picture>
               <picture>
               <img src="imagens/escadas.jpg" alt="escadas">
@@ -98,7 +99,7 @@
         <div class="botao">Mobs</div>
         <div class="hide">
           <picture>
-              <img src="imagens/zumbi.jpg" alt="zumbi">
+              <img src="imagens/zumbi.jpg" alt="zumbi" style="overflow: scroll;">
               <figcaption>Zumbi</figcaption>            
             </picture>
               <picture>
@@ -112,11 +113,6 @@
         </div>
       </div>
     </div>
-
-
-
-
-
       </section>
 
     </main>
@@ -136,15 +132,14 @@ botoes.forEach(botao => {
     botao.addEventListener("click", () => {
         const conteudo = botao.nextElementSibling;
 
-        // Verifica se está escondido ou não
-        // Se estiver "none" ou vazio, mudamos para "flex"
         if (conteudo.style.display === "flex") {
             conteudo.style.display = "none";
             conteudo.style.maxHeight = null;
         } else {
-            conteudo.style.display = "flex"; // Aqui a mágica acontece
+            conteudo.style.display = "flex"; 
             conteudo.style.maxHeight = conteudo.scrollHeight + "px";
         }
     });
 });
+//script feito com inteligencia artificial, pois eu queria fazer os botões e não sabia como
 </script>
