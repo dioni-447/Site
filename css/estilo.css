@@ -79,6 +79,13 @@ section {   /*ELEMENTO HTML PARA SEÇÕES*/
     border-radius: 10px;
     background-color: #6B3F1F;
 }
+.section {   /*ELEMENTO HTML PARA SEÇÕES*/
+    margin: 20px 0;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #5dbb3f;
+}
 
 .imagem{   /*CLASSE PARA AS IMAGENS FICAREM LADO A LADO*/
     background-image: url("../imagens/terra.jpg");
@@ -88,25 +95,40 @@ section {   /*ELEMENTO HTML PARA SEÇÕES*/
     border-radius: 10px;
     border: 2px solid #ffffff;
 }
-.imagem img{ /* AS IMAGENS DENTRO DA CLASSE IMAGEM*/
+img{ /* AS IMAGENS */
     width: 250px;
     border: 2px solid #ffffff;
     border-radius: 10px;
     object-fit: cover;  /* <- imagem continuar proporcional*/
 }
 
+.texto{
+    width:70%;
+    height: 35%;
+    overflow: auto;
+    max-height: 300px;
+    background-color: #8B5E3C;
+    border-radius: 10px;
+    padding:5px;
+    text-align: justify;
+}
+.texto2{
+    width:70%;
+    height: 35%;
+    overflow: auto;
+    max-height: 300px;
+    background-color: #1f6b01;
+    border-radius: 10px;
+    padding:5px;
+    text-align: justify;
+}
+
 .conteudo {   /*FEITO PARA DEIXAR O TEXTO E A IMAGEM LADO A LADO*/
     display: flex;
     align-items: center;
-    gap: 20px;
-}
-
- .conteudo img {   /*IMAGENS DENTRO DA CLASSE CONTEUDO*/
-    width: 300px;
-    border: 2px solid #ffffff;
-    border-radius:10px;
 
 }
+
 
 .container{    /*PARA DEIXAR AS DIVs UMA EM CIMA DA OUTRA*/
     display:flex;
@@ -140,12 +162,6 @@ section {   /*ELEMENTO HTML PARA SEÇÕES*/
     display: none;
 }
 
-.hide img{ /*IMAGENS DENTRO DO CONTEUDO ESCONDIDO*/
-    width: 250px;
-    border: 2px solid #ffffff;
-    border-radius:10px;
-    object-fit: cover;
-}
 
 .galeria.ativo {
     display: flex; /* Muda para flex ao ser ativado */
@@ -169,10 +185,7 @@ section {   /*ELEMENTO HTML PARA SEÇÕES*/
     text-decoration: none;
     color: #ffffff;
 }
-.contato a img{
-    width: 20%;
-    border-radius: 10px;
-}
+
 .contato a:hover{
     background-color: rgba(93,187,63,0.08);;
     border-radius: 10px;
@@ -230,13 +243,7 @@ section {   /*ELEMENTO HTML PARA SEÇÕES*/
     border-radius: 8px;
     padding: 12px;
 }
-.lt-card1 img, .lt-card2 img{
-    border-radius: 10px;
-    width:10%;
-    object-fit: cover;
-    border-radius: 6px;
-    flex-shrink: 0;
-}
+
 .lt-texto {
     display: flex;
     flex-direction: column; /* empilha h2, h3 e p verticalmente */
