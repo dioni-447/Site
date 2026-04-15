@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Minecraft - Página Inicial</title>
+  <title>Minecraft - Tabela</title>
   <link rel="stylesheet" type="text/css" href="css/estilo.css">
+  <style>
+    img{
+      width: 30%;
+      border:none;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -21,16 +27,212 @@
       <li><a href="biomas.html">Biomas</a></li>
       <li><a href="blocos.html">Blocos</a></li>
       <li><a href="mobs.html">Mobs</a></li>
-      <li><a href="dicas.html">Dicas</a></li>
+      <li><a href="links.html">Links externos</a></li>
       <li><a href="tabela.html">Tabela</a></li>
       <li><a href="galeria.html">Galeria</a></li>
       <li><a href="sobre.html">Sobre</a></li>
       <li><a href="contato.html">Contato</a></li>
     </ul>
-  </nav>
+  </nav><br><br>
 
   <main>
-      <h1 id="inicio">Início</h1>
+      <h1 id="inicio">Tabelas comparativas</h1>
+      <h2>Tabela de Minérios</h2>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Minério</th>
+            <th>Altura (Y)</th>
+            <th>Ferramenta mínima</th>
+            <th>Raridade</th>
+            <th>Principal uso</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr class="carvao">
+            <td class="nome">Carvão
+              <img src="imagens/carvao.png">
+            </td>
+            <td>0 a 320</td>
+            <td>Picareta de madeira</td>
+            <td>Comum</td>
+            <td>Combustível e tochas</td>
+        </tr>
+
+        <tr class="ferro">
+            <td class="nome">Ferro
+              <img src="imagens/iron.png">
+            </td>
+            <td>-64 a 320</td>
+            <td>Picareta de pedra</td>
+            <td>Comum</td>
+            <td>Ferramentas e armaduras</td>
+        </tr>
+
+        <tr class="ouro">
+            <td class="nome">Ouro
+              <img src="imagens/gold.png">
+            </td>
+            <td>-64 a 32</td>
+            <td>Picareta de ferro</td>
+            <td>Incomum</td>
+            <td>Itens especiais</td>
+        </tr>
+        <tr class="redstone">
+            <td class="nome">Redstone
+              <img src="imagens/redstone.png">
+            </td>
+            <td>-64 a 16</td>
+            <td>Picareta de ferro</td>
+            <td>Comum</td>
+            <td>Circuitos e mecanismos</td>
+        </tr>
+
+        <tr class="lapis">
+            <td class="nome">Lápis-lazúli
+              <img src="imagens/lapis.png">
+            </td>
+            <td>-64 a 64</td>
+            <td>Picareta de pedra</td>
+            <td>Incomum</td>
+            <td>Encantamentos e corante</td>
+        </tr>
+
+        <tr class="diamante">
+            <td class="nome">Diamante
+              <img src="imagens/diamond.png">
+            </td>
+            <td>-64 a 16</td>
+            <td>Picareta de ferro</td>
+            <td>Raro</td>
+            <td>Equipamentos fortes</td>
+        </tr>
+
+        <tr class="esmeralda">
+            <td class="nome">Esmeralda
+              <img src="imagens/emerald.png">
+            </td>
+            <td>Montanhas</td>
+            <td>Picareta de ferro</td>
+            <td>Muito raro</td>
+            <td>Comércio com aldeões</td>
+        </tr>
+
+        <tr class="netherite">
+            <td class="nome">Netherita
+              <img src="imagens/netherite.png">
+            </td>
+            <td>Nether</td>
+            <td>Picareta de diamante</td>
+            <td>Extremamente raro</td>
+            <td>Melhor equipamento</td>
+        </tr>
+    </tbody>
+</table>
+<hr>
+<h2>Dimensões do Minecraft</h2>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Dimensão</th>
+            <th>Nome em inglês</th>
+            <th>Dificuldade</th>
+            <th>Como acessar</th>
+            <th>Características principais</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td class="overworld">Mundo superior</td>
+            <td>Overworld</td>
+            <td>Normal</td>
+            <td>Mundo inicial</td>
+            <td>Biomas variados e sobrevivência</td>
+        </tr>
+
+        <tr>
+            <td class="nether">Nether</td>
+            <td>Nether</td>
+            <td>Muito difícil</td>
+            <td>Portal do Nether</td>
+            <td>Lava, mobs hostis e recursos raros</td>
+        </tr>
+
+        <tr>
+            <td class="end">The End</td>
+            <td>The End</td>
+            <td>Difícil</td>
+            <td>Portal do End</td>
+            <td>Batalha contra o Ender Dragon</td>
+        </tr>
+    </tbody>
+</table>
+<hr>
+<h2>Armaduras</h2>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Armadura</th>
+            <th>Proteção</th>
+            <th>Durabilidade</th>
+            <th>Resistência a fogo</th>
+            <th>Pode encantar?</th>
+            <th>Observação</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td class="nome">Couro</td>
+            <td>Baixa</td>
+            <td>Baixa</td>
+            <td>Não</td>
+            <td>Sim</td>
+            <td>Pode ser tingida</td>
+        </tr>
+
+        <tr>
+            <td>Ferro</td>
+            <td>Média</td>
+            <td>Média</td>
+            <td>Não</td>
+            <td>Sim</td>
+            <td>Fácil de obter</td>
+        </tr>
+
+        <tr>
+            <td>Ouro</td>
+            <td>Média</td>
+            <td>Baixa</td>
+            <td>Não</td>
+            <td>Sim</td>
+            <td>Encanta melhor</td>
+        </tr>
+
+        <tr>
+            <td>Diamante</td>
+            <td>Alta</td>
+            <td>Alta</td>
+            <td>Não</td>
+            <td>Sim</td>
+            <td>Muito resistente</td>
+        </tr>
+
+        <tr>
+            <td>Netherita</td>
+            <td>Muito alta</td>
+            <td>Muito alta</td>
+            <td>Sim</td>
+            <td>Sim</td>
+            <td>Melhor armadura do jogo</td>
+        </tr>
+    </tbody>
+</table>
   </main>
 
   <footer>

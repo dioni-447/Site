@@ -278,7 +278,110 @@ img{ /* AS IMAGENS */
     cursor: pointer;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  
+}
+tr{
+    background-color: #1a1a1a;
+    padding:5px;
+    height: 60px;
+}
 
+th{
+    background-color: #7D7D7D;
+    border:none; 
+    padding:10px;  
+}
+tr:first-child th:first-child {
+    border-radius: 8px 0 0 0;
+}
+tr:first-child th:last-child {
+    border-radius: 0 8px 0 0;
+}
+tr:last-child td:first-child {
+    border-radius: 0 0 0 8px;
+}
+tr:last-child td:last-child {
+    border-radius: 0 0 8px 0;
+}
+td{
+    border:none;
+     padding: 10px 16px;
+    color: #e0e0e0;
+}
+td.nome {
+    font-weight: 500;
+    width: 130px;
+    border-radius: 4px;
+    padding: 10px 12px;
+}
+.carvao   { border-left: 4px solid #2d2d2d; }
+.ferro    { border-left: 4px solid #d4c9b0; }
+.ouro     { border-left: 4px solid #fcee4b; }
+.diamante { border-left: 4px solid #4fe7f5; }
+.esmeralda{ border-left: 4px solid #17dd62; }
+.netherite{ border-left: 4px solid #443043; }
+.redstone { border-left: 4px solid #c41a1a; }
+.lapis    { border-left: 4px solid #1b44ac; }
+
+.carvao    td.nome { background-color: #2d2d2d; color: #aaa;    border-left: 4px solid #555; display:flex; flex-direction: column; }
+.ferro     td.nome { background-color: #c8bfa8; color: #2a2a2a; border-left: 4px solid #d4c9b0; display:flex; flex-direction: column;}
+.ouro      td.nome { background-color: #fcee4b; color: #5a4400; border-left: 4px solid #e6d200; display:flex; flex-direction: column;}
+.redstone  td.nome { background-color: #c41a1a; color: #fff;    border-left: 4px solid #ff4444; display:flex; flex-direction: column;}
+.lapis     td.nome { background-color: #1b44ac; color: #cce0ff; border-left: 4px solid #4477dd; display:flex; flex-direction: column;}
+.esmeralda td.nome { background-color: #17dd62; color: #003d1a; border-left: 4px solid #00aa44; display:flex; flex-direction: column;}
+.diamante  td.nome { background-color: #4fe7f5; color: #003d45; border-left: 4px solid #00c8d8; display:flex; flex-direction: column;}
+.netherite td.nome { background-color: #443043; color: #d4b8d4; border-left: 4px solid #7a5c7a; display:flex; flex-direction: column;}
+
+.overworld{
+    background-image: url("../imagens/overworld.png");
+    background-size: cover;
+    background-position: center;
+}
+.nether{
+    background-image: url("../imagens/nether.png");
+    background-size: cover;
+    background-position: center;
+}
+.end{
+    background-image: url("../imagens/end.png");
+    background-size: cover;
+    background-position: center;
+}
+.link a{
+    color:#00aa44;
+}
+.link a:hover{
+    color:#01c24e;
+    text-decoration: underline;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+    gap: 12px;                              /* espaço entre as fotos */
+    padding: 20px 0;
+}
+
+.galeria img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;       /* imagem preenche sem distorcer */
+    border-radius: 8px;
+    border: 2px solid #3a3a3a;
+    transition: transform 0.2s; /* animação suave no hover */
+}
+
+.galeria img:hover {
+    transform: scale(1.03);  /* leve zoom ao passar o mouse */
+    border-color: #5dbb3f;   /* borda verde no hover */
+    cursor: pointer;
+}
 footer {  /*a area de baixo do site*/
     background-color: #2d5a1b;
     color: #ffffff;
