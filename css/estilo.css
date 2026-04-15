@@ -397,9 +397,11 @@ footer {  /*a area de baixo do site*/
 /*adição de suporte mobile, tambem feito com IA, por curiosidade*/
 @media (max-width: 768px) {
 
+    /* HEADER */
     header {
         flex-direction: column;
         gap: 10px;
+        text-align: center;
     }
 
     header img {
@@ -408,50 +410,98 @@ footer {  /*a area de baixo do site*/
         width: 120px;
     }
 
-    .imagem {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-    }
-
-    .imagem img {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .conteudo {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .conteudo img {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .hide {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .hide img {
-        width: 100%;
-        max-width: 280px;
-    }
-
+    /* MENU */
     nav ul {
         flex-direction: column;
         align-items: center;
         gap: 8px;
     }
 
+    /* MAIN */
+    main {
+        padding: 15px;
+    }
+
+    /* SEÇÕES COM IMAGEM */
+    .imagem {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .conteudo {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
     img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* TEXTO */
+    .texto,
+    .texto2 {
+        width: 100%;
+        max-height: none;
+    }
+
+    /* LINHA DO TEMPO */
+    .lt-card1,
+    .lt-card2 {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    /* CONTATO (GRID) */
+    .contato {
+        grid-template-columns: 1fr;
+    }
+
+    .form {
+        grid-column: 1;
+    }
+
+    /* INPUTS */
+    #linha {
+        flex-direction: column;
+    }
+
+    #linha input {
         width: 100%;
     }
 
+    .form textarea {
+        width: 100%;
+    }
+
+    /* GALERIA */
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria img {
+        height: auto;
+    }
+
+    /* TABELAS */
+    table {
+        font-size: 0.9rem;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    /* BOTÃO */
+    .botao {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* FONTES */
     h1 { font-size: 1.4rem; }
-    h2 { font-size: 1.1rem; }
+    h2 { font-size: 1.2rem; }
+    h3 { font-size: 1rem; }
 
-    main { padding: 15px; }
-
-} 
+}
